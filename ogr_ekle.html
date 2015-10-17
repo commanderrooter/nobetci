@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>NOBETCI - Kullanıcı Ekle</title>
+</head>
+
+<body>
+<form id="gonder_form" name="gonder_form" method="post" action="ogr_ekle.php">
+  <table width="330" height="214" border="0" align="center">
+    <tr>
+      <td width="89" align="left"><em><strong>Numara</strong></em></td>
+      <td width="199"><em><strong>: 
+            <input type="text" name="numara" id="numara" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="left"><em><strong>Adı</strong></em></td>
+      <td><em><strong>: 
+            <input type="text" name="ad" id="ad" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="left"><em><strong>Soyadı</strong></em></td>
+      <td><em><strong>: 
+            <input type="text" name="soyad" id="soyad" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="left"><em><strong>Bölük</strong></em></td>
+      <td><em><strong>: 
+            <input type="text" name="boluk" id="boluk" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="left"><em><strong>Kısım</strong></em></td>
+      <td><em><strong>: 
+            <input type="text" name="kisim" id="kisim" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="left"><em><strong>Oda</strong></em></td>
+      <td><em><strong>: 
+            <input type="text" name="oda" id="oda" />
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td height="26" align="left"><strong><em>Evci/Bekar</em></strong></td>
+      <td><em><strong>: 
+            
+        <label for="evci_bekar"></label>
+            <select name="evci_bekar" id="evci_bekar">
+              <option value="NULL" selected="selected"></option>
+              <option value="EVCI">EVCI</option>
+              <option value="BEKAR">BEKAR</option>
+</select>
+      </strong></em></td>
+    </tr>
+    <tr>
+      <td align="center"><input type="submit" value="Gönder" /></td>
+      <td align="center"><em><strong>
+        <input name="Sıfırla" type="reset" value="Temizle" />
+      </strong></em></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
