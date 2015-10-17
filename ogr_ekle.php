@@ -14,7 +14,7 @@ if ($_POST['ad'] != '' && $_POST['soyad'] != '' && $_POST['numara'] != '' && $_P
 		 mysql_query("INSERT INTO `kat`(numara,tuttu,son_tarih)  VALUES ('$numara','','')")or die ("kat eklenmedi");
 		 mysql_close($baglanti); // baglanti degiskeni mysqlcon.php icinde.
 	}else {
-		echo "Veri Girisi Yapiniz";
+		echo "Veri Girisi Yapinizz";
 	}
 
 ?>
