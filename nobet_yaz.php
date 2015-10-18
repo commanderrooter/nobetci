@@ -9,7 +9,8 @@ $nobet = $_POST['nobet'];
 $tarihler = tarih_fark_bul($tarih1,$tarih2,"-");
 
 	if($nobet == 'kat'){
-		$sorgu = mysql_query("SELECT kat.id,kat.numara,kat.tuttu,kat.son_tarih,ogr_listesi.evci_bekar FROM kat,ogr_listesi WHERE kat.numara = ogr_listesi.numara ORDER BY kat.tuttu ASC");
+		$sorgu = mysql_query("SELECT kat.id,kat.numara,kat.tuttu,kat.son_tarih,ogr_listesi.evci_bekar 
+		       FROM kat,ogr_listesi WHERE kat.numara = ogr_listesi.numara ORDER BY kat.tuttu ASC");
 		while($liste = mysql_fetch_assoc($sorgu)){
 			
 			$dizi_numara[] = $liste['numara'];  // Burada diziye atadık.
